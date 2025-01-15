@@ -1,9 +1,9 @@
-import DaisyUI from "./DaisyUI";
+import Form from "./Form";
 
 const App = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <DaisyUI />
+      <Form />
     </div>
   );
 };

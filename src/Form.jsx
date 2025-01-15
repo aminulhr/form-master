@@ -25,45 +25,50 @@ const Form = () => {
     }
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h1 className="bg-yellow-100 text-black text-2xl font-bold p-4 m-4 rounded-md">
-          Fill in the Form
-        </h1>
-        <input
-          onChange={handelName}
-          className="bg-gray-100 text-black p-4 m-4 rounded-md"
-          type="text"
-          name="name"
-        />{" "}
-        <br />
-        <input
-          onChange={handelEmail}
-          className="bg-gray-100 text-black p-4 m-4 rounded-md"
-          type="email"
-          name="email"
-        />{" "}
-        <br />
-        <input
-          onChange={handelPassword}
-          className="bg-gray-100 text-black p-4 m-4 rounded-md"
-          type="password"
-          name="password"
-          required
-        />{" "}
-        <br />
-        <input
-          className="bg-gray-100 text-black p-4 m-4 rounded-md"
-          type="submit"
-          value="Submit Form"
-        />{" "}
-        <br />
-        {error && (
-          <p className="text-3lx text-red-500" role="alert">
-            {error}
-          </p>
-        )}
-      </form>
+    <div className="border-2 border-yellow-200 p-4 m-4 rounded-md">
+      <h1 className="bg-yellow-100 text-black text-md font-bold p-4 m-4 rounded-md w-max">
+        Controled Form with React useState Hooks
+      </h1>
+      <div>
+        <form onSubmit={handleSubmit} className="flex flex-col  w-max ml-8">
+          <input
+            placeholder="Name"
+            onChange={handelName}
+            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            type="text"
+            name="name"
+          />{" "}
+          <br />
+          <input
+            placeholder="Email"
+            onChange={handelEmail}
+            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            type="email"
+            name="email"
+          />{" "}
+          <br />
+          <input
+            placeholder="Password"
+            onChange={handelPassword}
+            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            type="password"
+            name="password"
+            required
+          />{" "}
+          <br />
+          <input
+            className="bg-blue-600 text-white p-4 m-4 rounded-md font-bold hover:bg-blue-800 "
+            type="submit"
+            value="Submit Controled Form"
+          />{" "}
+          <br />
+          {error && (
+            <p className="text-3lx text-red-500" role="alert">
+              {error}
+            </p>
+          )}
+        </form>
+      </div>
     </div>
   );
 };

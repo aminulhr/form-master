@@ -1,4 +1,5 @@
 import Form from "./Form";
+import HookForm from "./HookForm";
 import Ref_Form from "./Ref_Form";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div className="flex  w-max ml-8">
       <Form />
       <Ref_Form />
+      <HookForm />
     </div>
   );
 };

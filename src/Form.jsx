@@ -26,7 +26,7 @@ const Form = () => {
   };
   return (
     <div className="border-2 border-yellow-200 p-4 m-4 rounded-md">
-      <h1 className="bg-yellow-100 text-black text-md font-bold p-4 m-4 rounded-md w-max">
+      <h1 className="bg-green-400 text-black text-md font-bold p-4 m-4 rounded-md w-max">
         Controled Form with React useState Hooks
       </h1>
       <div>

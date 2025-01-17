@@ -1,13 +1,17 @@
 import Form from "./Form";
 import HookForm from "./HookForm";
 import Ref_Form from "./Ref_Form";
+import ReUsableForm from "./ReUsableForm";
 
 const App = () => {
   return (
-    <div className="flex  w-max ml-8">
-      <Form />
-      <Ref_Form />
-      <HookForm />
+    <div>
+      <div className="flex ml-8 gap-3">
+        <Form />
+        <Ref_Form />
+        <HookForm />
+        <ReUsableForm />
+      </div>
     </div>
   );
 };

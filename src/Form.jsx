@@ -25,10 +25,11 @@ const Form = () => {
     }
   };
   return (
-    <div className=" w-64 border-2 border-yellow-200 mt-4 mb-4 rounded-md ">
+    <div className=" w-64 border-2 border-yellow-200 mt-4 mb-4  rounded-md ">
       <h1 className="bg-green-400 text-black text-md font-bold p-4 m-4 rounded-md w-max">
         Controled Form with <br /> React useState Hooks
       </h1>
+
       <div>
         <form onSubmit={handleSubmit} className="flex flex-col  w-max ">
           <input

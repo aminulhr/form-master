@@ -25,17 +25,17 @@ const Form = () => {
     }
   };
   return (
-    <div className=" w-64 border-2 border-yellow-200 mt-4 mb-4  rounded-md ">
-      <h1 className="bg-green-400 text-black text-md font-bold p-4 m-4 rounded-md w-max">
+    <div className=" w-64 border-2 border-yellow-200 mt-4  rounded-md ">
+      <h1 className="bg-green-400 text-black text-md font-bold p-2 m-2 rounded-md w-max">
         Controled Form with <br /> React useState Hooks
       </h1>
 
       <div>
-        <form onSubmit={handleSubmit} className="flex flex-col  w-max ">
+        <form onSubmit={handleSubmit} className="flex flex-col  ">
           <input
             placeholder="Name"
             onChange={handelName}
-            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            className="bg-gray-100 text-black p-1 m-1 rounded-md"
             type="text"
             name="name"
           />{" "}
@@ -43,7 +43,7 @@ const Form = () => {
           <input
             placeholder="Email"
             onChange={handelEmail}
-            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            className="bg-gray-100 text-black p-1 m-1 rounded-md"
             type="email"
             name="email"
           />{" "}
@@ -51,14 +51,14 @@ const Form = () => {
           <input
             placeholder="Password"
             onChange={handelPassword}
-            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            className="bg-gray-100 text-black p-1 m-1 rounded-md"
             type="password"
             name="password"
             required
           />{" "}
           <br />
           <input
-            className="bg-blue-600 text-white p-4 m-4 rounded-md font-bold hover:bg-blue-800 "
+            className="bg-blue-600 text-white p-1 m-1 rounded-md font-bold hover:bg-blue-800 "
             type="submit"
             value="Submit Controled Form"
           />{" "}

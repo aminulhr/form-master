@@ -14,8 +14,8 @@ const Ref_Form = () => {
   };
 
   return (
-    <div className="w-64 border-2 border-yellow-200 mt-4 mb-4 rounded-md">
-      <h1 className="bg-purple-500 text-black text-md font-bold p-4 m-4 rounded-md w-max">
+    <div className="w-64 border-2 border-yellow-200 mt-4 rounded-md">
+      <h1 className="bg-purple-500 text-black  font-bold p-1 m-1 rounded-md w-max">
         Uncontrolled Form with <br /> React useRef Hooks
       </h1>
       <div>
@@ -26,7 +26,7 @@ const Ref_Form = () => {
             type="email"
             name="email"
             ref={emailRef}
-            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            className="bg-gray-100 text-black p-1 m-1 rounded-md"
           />
           <br />
           <input
@@ -34,7 +34,7 @@ const Ref_Form = () => {
             type="number"
             name="Phone"
             ref={numberRef}
-            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            className="bg-gray-100 text-black p-1 m-1 rounded-md"
           />
           <br />
           <input
@@ -42,11 +42,11 @@ const Ref_Form = () => {
             type="password"
             name="password"
             ref={passwordRef}
-            className="bg-gray-100 text-black p-4 m-4 rounded-md"
+            className="bg-gray-100 text-black p-1 m-1 rounded-md"
           />
           <br />
           <input
-            className="bg-blue-600 text-white p-4 m-4 rounded-md font-bold hover:bg-blue-800"
+            className="bg-blue-600 text-white p-1 m-1 rounded-md font-bold hover:bg-blue-800"
             type="submit"
             value="Submit Uncontrolled Form"
           />
